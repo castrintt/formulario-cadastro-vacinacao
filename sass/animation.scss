@@ -1,0 +1,17 @@
+@mixin animacao-fundo {
+    animation-name: fundo;
+    animation-iteration-count: infinite;
+    animation-duration: 100s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    @keyframes fundo {
+        from {
+            background-position: 0 50%;
+            
+        }
+        to {
+            background-position: 100% 50%;
+            
+        }
+    }
+}

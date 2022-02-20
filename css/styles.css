@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Serif:wght@300&display=swap");
+body {
+  background: url("/img/virus.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  animation-name: fundo;
+  animation-iteration-count: infinite;
+  animation-duration: 100s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+@keyframes fundo {
+  from {
+    background-position: 0 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
+}
+body .container__formulario {
+  background-color: rgba(170, 156, 175, 0.596);
+  width: 90%;
+  position: relative;
+  top: 50%;
+  transform: translatey(-50%);
+  border-radius: 10px;
+  font-family: "Roboto Serif", sans-serif;
+  font-weight: 700;
+}
+@media screen and (min-width: 992px) {
+  body .container__formulario {
+    max-width: 60%;
+  }
+}
+@media screen and (min-width: 1244px) {
+  body .container__formulario {
+    max-width: 50%;
+  }
+}
+body .container__formulario .formulario__titulo {
+  font-family: "Bebas Neue", cursive;
+  color: #612761;
+}
+body .container__formulario .btn-dark {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 10px 50px;
+  color: white;
+  font-weight: bold;
+  background-color: black;
+}
+body .container__formulario .form-check {
+  vertical-align: middle;
+}
+body .container__formulario .form-check-label {
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=styles.css.map */

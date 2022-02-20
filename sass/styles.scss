@@ -1,0 +1,48 @@
+@import "animation","media","fonts";
+
+
+body {
+    background: url("/img/virus.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    @include animacao-fundo;
+    .container__formulario {
+        background-color: rgba(170, 156, 175, 0.596);
+        width: 90%;
+        position: relative;
+        top: 50%;
+        transform: translatey(-50%);
+        border-radius: 10px;
+        font-family: $fonte-texto;
+        font-weight: 700;
+        @include queries (992px){
+            max-width: 60%;
+        }
+        @include queries (1244px){
+            max-width: 50%;
+        }
+        .formulario__titulo {
+            font-family: $fonte-titulo;
+            color: rgb(97, 39, 97);
+        }
+        .btn-dark {
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            padding: 10px 50px;
+            color: white;
+            font-weight: bold;
+            background-color: black;
+        }
+        .form-check {
+            vertical-align: middle;
+        }
+        .form-check-label {
+            vertical-align: middle;
+            
+        }
+    }
+
+}
