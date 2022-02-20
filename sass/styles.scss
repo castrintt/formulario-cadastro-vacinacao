@@ -7,6 +7,9 @@ body {
     background-position: center center;
     background-size: cover;
     height: 100vh;
+    @include queries (1200px){
+        background-size:200% 200%
+    }
     @include animacao-fundo;
     .container__formulario {
         background-color: rgba(170, 156, 175, 0.596);
