@@ -5,6 +5,7 @@ body {
   background-position: center center;
   background-size: cover;
   height: 100vh;
+  vertical-align: middle;
   animation-name: fundo;
   animation-iteration-count: infinite;
   animation-duration: 100s;
@@ -42,6 +43,11 @@ body .container__formulario {
 @media screen and (min-width: 1244px) {
   body .container__formulario {
     max-width: 50%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body .container__formulario {
+    max-width: 40%;
   }
 }
 body .container__formulario .formulario__titulo {

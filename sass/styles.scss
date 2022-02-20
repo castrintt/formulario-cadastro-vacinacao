@@ -7,6 +7,7 @@ body {
     background-position: center center;
     background-size: cover;
     height: 100vh;
+    vertical-align: middle;
     @include queries (1200px){
         background-size:200% 200%
     }
@@ -25,6 +26,9 @@ body {
         }
         @include queries (1244px){
             max-width: 50%;
+        }
+        @include queries (1440px){
+            max-width: 40%;
         }
         .formulario__titulo {
             font-family: $fonte-titulo;
